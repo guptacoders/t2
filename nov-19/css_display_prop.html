@@ -1,0 +1,63 @@
+<!-- CSS Display property
+ 1) Inline
+ 2) Block
+ 3) inline-block
+ 4) none-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .p1 {
+        display: none;
+        border: 2px solid blue;
+      }
+
+      .p2 {
+        display: inline;
+        border: 2px solid green;
+            }
+
+      .p3 {
+        display: block;
+        border: 2px solid red;
+      }
+
+      .p4 {
+        display: inline-block;
+        border: 2px solid brown;
+        height: 300px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      This is Demo
+      <p class="p1">This is none</p>
+      How are You ?
+    </div>
+    <hr />
+    <div>
+      This is Demo
+      <p class="p2">This is inline</p>
+      How are You ?
+    </div>
+    <hr />
+    <div>
+      This is Demo
+      <p class="p3">This is block</p>
+      How are You ?
+    </div>
+    <hr />
+
+    <div>
+      This is Demo
+      <p class="p4">This is inline-block</p>
+      How are You ?
+    </div>
+  </body>
+</html>

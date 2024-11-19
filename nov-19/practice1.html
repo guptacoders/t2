@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .grad {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-image: conic-gradient(
+          red 0deg 90deg,
+          blue 90deg 180deg,
+          green 180deg 270deg,
+          yellow 270deg 360deg
+        );
+      }
+
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        animation-name: moveToCorners;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes moveToCorners {
+        0% {
+          top: 0px;
+          left: 0px;
+          background-image: conic-gradient(
+            red 0deg 90deg,
+            blue 90deg 180deg,
+            green 180deg 270deg,
+            yellow 270deg 360deg
+          );
+        }
+        30% {
+          top: 0px;
+          left: 1000px;
+          background-image: conic-gradient(
+            yellow 0deg 90deg,
+            red 90deg 180deg,
+            blue 180deg 270deg,
+            green 270deg 360deg
+          );
+        }
+        60% {
+          top: 0px;
+          left: 1000px;
+          background-image: conic-gradient(
+            green 0deg 90deg,
+            red 90deg 180deg,
+            yellow 180deg 270deg,
+            blue 270deg 360deg
+          );
+        }
+        100% {
+          top: 0px;
+          left: 1000px;
+          background-image: conic-gradient(
+            blue 0deg 90deg,
+            green 90deg 180deg,
+            yellow 180deg 270deg,
+            red 270deg 360deg
+          );
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grad"></div>
+  </body>
+</html>
