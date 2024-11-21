@@ -1,0 +1,77 @@
+<!-- Write HTML & CSS Script to display two tables of 50% width having 3 col and 3 rows
+ 1) Add Random Data to table 
+ 2) This two tables must be horizontally adjacent to each others 
+ 3) Make responsive web page initially first table should have lightblue color and second table should have lightgreen color when page comes to portrait mode color of table should be reversed   -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        float: left;
+      }
+
+      #table1 {
+        background-color: lightblue;
+      }
+
+      #table2 {
+        background-color: lightgreen;
+      }
+
+      @media only screen and (orientation: portrait) {
+        #table1 {
+          background-color: lightgreen;
+        }
+
+        #table2 {
+          background-color: lightblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table id="table1" border="1" cellpadding="30px">
+      <tr>
+        <td>ABC</td>
+        <td>PQR</td>
+        <td>XYZ</td>
+      </tr>
+
+      <tr>
+        <td>HIJ</td>
+        <td>KLM</td>
+        <td>NOQ</td>
+      </tr>
+
+      <tr>
+        <td>PQR</td>
+        <td>STU</td>
+        <td>VWZ</td>
+      </tr>
+    </table>
+
+    <table id="table2" border="1" cellpadding="30px">
+      <tr>
+        <td>ABC</td>
+        <td>PQR</td>
+        <td>XYZ</td>
+      </tr>
+
+      <tr>
+        <td>HIJ</td>
+        <td>KLM</td>
+        <td>NOQ</td>
+      </tr>
+
+      <tr>
+        <td>PQR</td>
+        <td>STU</td>
+        <td>VWZ</td>
+      </tr>
+    </table>
+  </body>
+</html>

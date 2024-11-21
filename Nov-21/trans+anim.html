@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grad {
+        height: 300px;
+        width: 300px;
+      }
+      div {
+        animation-name: example;
+        width: 200px;
+        height: 200px;
+        background-image: conic-gradient(red 0deg 90deg, blue 90deg 180deg);
+        animation-duration: 3s;
+        animation-delay: 0.3s;
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      /* using percentage */
+      @keyframes example {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        30% {
+          top: 0px;
+          left: 800px;
+          transform: rotate(150deg);
+        }
+        60% {
+          top: 600px;
+          left: 0px;
+          transform: scale(0.5);
+        }
+        100% {
+          top: 600px;
+          left: 800px;
+          transform: skew(40deg, 20deg);
+          background-image: conic-gradient(gold 0deg 90deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grad"></div>
+  </body>
+</html>

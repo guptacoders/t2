@@ -1,0 +1,42 @@
+<!-- Active & Hoverable Pagination -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .pagination {
+        display: inline-block;
+        height: 37px;
+        font-size: medium;
+      }
+      .pagination a {
+        color: black;
+        text-decoration: none;
+        padding: 8px 16px;
+        float: left;
+        border: 2px solid rgb(66, 6, 6);
+      }
+      .pagination a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+      .pagination a:hover:not(.active) {
+        background-color: #31eed5;
+        border-radius: 50px;
+        color: rgb(183, 19, 189);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a class="active" href="https://www.google.com/">1</a>
+      <a href="https://www.google.com/">2</a>
+      <a href="https://www.google.com/">3</a>
+      <a href="#">&raquo;</a>
+    </div>
+  </body>
+</html>
