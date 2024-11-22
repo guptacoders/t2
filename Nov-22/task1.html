@@ -1,0 +1,73 @@
+<!-- Write a HTML & CSS Script to design three sections having 20% of height and full width apply following req
+1) Each section has a Title and a para by hovering each section 
+   it should be enclosed by a Red border 
+2) By hovering title of each section it should be converted to Red color. 
+3) By hovering pargraph it should take 2 cm of begining space and letter of each word capital
+4) Store all CSS Property in global CSS Variables  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <style>
+      :root {
+        --d1_c: rgb(23, 218, 218);
+        --d2_c: rgb(20, 161, 196);
+        --d3_c: rgb(230, 198, 18);
+        --d_h: 2px solid red;
+        --h_h: red;
+        --p_h_ti: 2cm;
+        --p_h_tt: capitalize;
+      }
+
+      div {
+        padding: 10px;
+        margin: 5px;
+      }
+      .div1 {
+        height: 100px;
+        width: auto;
+        background-color: var(--d1_c);
+      }
+      .div2 {
+        height: 100px;
+        width: auto;
+        background-color: var(--d2_c);
+      }
+      .div3 {
+        height: 100px;
+        width: auto;
+        background-color: var(--d3_c);
+      }
+
+      * div:hover {
+        border: var(--d_h);
+      }
+
+      * h2:hover {
+        color: var(--h_h);
+      }
+
+      * p:hover {
+        text-indent: var(--p_h_ti);
+        text-transform: var(--p_h_tt);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <h2>Heading 1</h2>
+      <p>This is pargraph 1</p>
+    </div>
+    <div class="div2">
+      <h2>Heading 2</h2>
+      <p>This is pargraph 2</p>
+    </div>
+    <div class="div3">
+      <h2>Heading 3</h2>
+      <p>This is pargraph 3</p>
+    </div>
+  </body>
+</html>

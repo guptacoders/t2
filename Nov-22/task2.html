@@ -1,0 +1,54 @@
+<!-- Write HTML & CSS Script to design one table having 3 col & 5 row Add Random data while Hovering it should be expanded around 50% horizontally bgcolor: red& font-color:white Expansion should take place in 2s-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        margin-left: 100px;
+      }
+      table:hover {
+        transform: scaleX(1.5);
+        background-color: red;
+        color: white;
+        transition: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="4" rules="all" cellpadding="40px">
+      <tr>
+        <td>AB</td>
+        <td>CD</td>
+        <td>EF</td>
+      </tr>
+
+      <tr>
+        <td>GH</td>
+        <td>IJ</td>
+        <td>KL</td>
+      </tr>
+
+      <tr>
+        <td>MN</td>
+        <td>OP</td>
+        <td>QR</td>
+      </tr>
+
+      <tr>
+        <td>ST</td>
+        <td>UV</td>
+        <td>WX</td>
+      </tr>
+
+      <tr>
+        <td>YZ</td>
+        <td>AA</td>
+        <td>BB</td>
+      </tr>
+    </table>
+  </body>
+</html>

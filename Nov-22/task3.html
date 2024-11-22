@@ -1,0 +1,42 @@
+<!-- Write HTML & CSS Script that add some text to an image in the bottom left corner and top right corner also use opacity property of image to make image transparent -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cont {
+        height: 400px;
+        width: 400px;
+        border: 4px solid black;
+      }
+
+      img {
+        height: 400px;
+        width: 400px;
+        opacity: 50%;
+      }
+
+      .tr {
+        top: 0px;
+        left: 340px;
+        position: absolute;
+      }
+
+      .bl {
+        top: 370px;
+        left: 12px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <img src="img.jfif" />
+      <p class="bl">Bottom Left</p>
+      <p class="tr">Top Right</p>
+    </div>
+  </body>
+</html>

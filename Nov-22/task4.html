@@ -1,0 +1,28 @@
+<!-- Write HTML & CSS Scipt to increase the div element to be 2 times of its original width and 3 times of its original height with transition effect with delay:3s and duration:5s  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(226, 157, 30);
+        transition-property: width, height;
+        transition-delay: 3s;
+        transition-duration: 5s;
+      }
+
+      div:hover {
+        height: 600px;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

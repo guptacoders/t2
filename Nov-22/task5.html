@@ -1,0 +1,46 @@
+<!-- Write HTML & CSS Script to design Registration Form having fields like:
+ name
+ password 
+ contact no
+ gender
+ Submit,Reset Button
+ Follow below req:
+ 1) While clicking on name text bg color of its input field change to :lightgreen
+ 2) While hovering on password & contact no text font-size of its input field will increase respectively.
+ 3)  While clicking on gender field text bg color of text should change to blue
+ 4)  Both Submit & Reset buttons text should be bold and italic while hovering -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      input[type="text"]:hover {
+        background-color: lightgreen;
+      }
+
+      input[type="password"]:hover,
+      input[type="tel"]:hover {
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>Name: <input type="text" /></label>
+      <br /><br />
+      <label>Password: <input type="password" /></label>
+      <br /><br />
+      <label>Contact No: <input type="tel" /></label>
+      <br /><br />
+      Gender: <label>Male<input type="radio" name="gen" /> </label>
+      <label>Female<input type="radio" name="gen" /></label> <br /><br />
+      <label>
+        <input type="submit" />
+        <input type="reset" />
+      </label>
+    </form>
+  </body>
+</html>
